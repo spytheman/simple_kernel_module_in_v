@@ -1,0 +1,16 @@
+modules.order
+Module.symvers
+.Module.symvers.cmd
+.modules.order.cmd
+.vhellokernel.ko.cmd
+.vhellokernel.mod.cmd
+.vhellokernel.mod.o.cmd
+.vhellokernel.o.cmd
+vhellokernel.c
+vhellokernel.dwo
+vhellokernel.ko
+vhellokernel.mod
+vhellokernel.mod.c
+vhellokernel.mod.dwo
+vhellokernel.mod.o
+vhellokernel.o

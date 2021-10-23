@@ -5,7 +5,7 @@ a very simple Linux kernel module,
 using [the V programming language](https://vlang.io/) .
 
 NB: this is *very* experimental and may break in the future.
-It works as of 2021/10/23 with gcc 10.3.0 and V aa22751 .
+It works as of 2021/10/23, with `gcc 10.3.0` and `V 0.2.4 008d15d` .
 
 The `-no-builtin -no-preludes` options produce C code, that may not
 even compile, if it depends on some of V's `builtin` module features, like

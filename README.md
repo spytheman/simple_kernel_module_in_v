@@ -7,6 +7,10 @@ using [the V programming language](https://vlang.io/) .
 NB: this is *very* experimental and may break in the future.
 It works as of 2021/11/23 with gcc 10.3.0 and V aa22751 .
 
+The `-no-builtin -no-preludes` options produce C code, that may not
+even compile, if it depends on some of V's `builtin` module features, like
+dynamic arrays, maps, array/string methods, string interpolation etc.
+
 ## Prerequisites:
 A C compiler, and a V compiler.
 

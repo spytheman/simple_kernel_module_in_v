@@ -34,6 +34,9 @@ v up
 ## Removing the module from your kernel:
 `rmmod vhellokernel.ko`
 
+## `make test`
+
 ## Further reading:
-https://tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
-https://github.com/vlang/v/blob/master/doc/docs.md
+1. https://tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
+
+2. https://github.com/vlang/v/blob/master/doc/docs.md

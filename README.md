@@ -43,6 +43,8 @@ If everything is ok, you should see something like this:
 vhellokernel 16384 0 - Live 0x0000000000000000 (OE)
 ```
 
+Use `dmesg | tail` to see the messages that the module wrote.
+
 ## Removing the module from your kernel:
 `sudo rmmod vhellokernel.ko`
 

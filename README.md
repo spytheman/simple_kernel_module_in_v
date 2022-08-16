@@ -29,14 +29,21 @@ v up
 ## Building the kernel module:
 `make`
 
+See also https://www.kernel.org/doc/html/latest/kbuild/modules.html .
+
 ## Loading the module in your kernel:
-`insmode vhellokernel.ko`
+`sudo insmod vhellokernel.ko`
 
 ## Verifying that the module was loaded in the kernel:
 `cat /proc/modules |grep vhellokernel`
 
+If everything is ok, you should see something like this:
+```
+vhellokernel 16384 0 - Live 0x0000000000000000 (OE)
+```
+
 ## Removing the module from your kernel:
-`rmmod vhellokernel.ko`
+`sudo rmmod vhellokernel.ko`
 
 ## `make clean test`
 ```
@@ -70,4 +77,6 @@ make[1]: Leaving directory '/v/misc/2021_10_22__02/simple_kernel_module_in_v'
 ## Further reading:
 1. https://tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
 
-2. https://github.com/vlang/v/blob/master/doc/docs.md
+2. https://www.kernel.org/doc/html/latest/kbuild/modules.html
+
+3. https://github.com/vlang/v/blob/master/doc/docs.md

@@ -1,6 +1,8 @@
+## See also https://www.kernel.org/doc/html/latest/kbuild/modules.html
+
 KDIR ?= /lib/modules/`uname -r`/build
 
-all: vhellokernel.c vhellokernel.v
+all: vhellokernel.c vhellokernel.c.v
 	$(MAKE) -C $(KDIR) M=$$PWD modules
 
 clean:
@@ -9,9 +11,9 @@ clean:
 
 PHONY += vhellokernel.c vhellokernel.o test load unload
 
-vhellokernel.o: vhellokernel.c vhellokernel.v
-vhellokernel.c: vhellokernel.v
-	v -no-builtin -no-preludes -o vhellokernel.c vhellokernel.v
+vhellokernel.o: vhellokernel.c vhellokernel.c.v
+vhellokernel.c: vhellokernel.c.v
+	v -no-builtin -no-preludes -o vhellokernel.c vhellokernel.c.v
 
 test: all
 	make load

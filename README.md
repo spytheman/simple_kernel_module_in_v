@@ -6,6 +6,7 @@ using [the V programming language](https://vlang.io/) .
 
 NB: this is *very* experimental and may break in the future.
 It works as of 2021/10/23, with `gcc 10.3.0` and `V 0.2.4 008d15d` .
+Update: it also works as of 2022/08/16, with `gcc 10.3.0` and `V 0.3.0 3bc01d6` too.
 
 The `-no-builtin -no-preludes` options produce C code, that may not
 even compile, if it depends on some of V's `builtin` module features, like
